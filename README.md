@@ -93,6 +93,7 @@ Used `scikit-image` for computing metrics:
 ```python
 Run Assignment4_partA.py to view the evaluation results
 ```
+<img width="1552" alt="Screenshot 2025-05-04 at 3 07 36 PM" src="https://github.com/user-attachments/assets/ad263588-dceb-4f55-850e-90993012f359" />
 
 ---
 
