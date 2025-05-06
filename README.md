@@ -1,6 +1,6 @@
 # Apollo 17 View Synthesis with Gaussian Splatting and Photogrammetry
 
-This project reconstructs 3D scenes from Apollo 17 lunar imagery using COLMAP and enhances them using **Gaussian Splatting** to synthesize novel views. We perform photogrammetry-based modeling with and without augmented views and assess reconstruction quality using both **quantitative metrics** and mesh comparisons.
+This Assignment-4 reconstructs 3D scenes from Apollo 17 lunar imagery using COLMAP and enhances them using **Gaussian Splatting** to synthesize novel views. We perform photogrammetry-based modeling with and without augmented views and assess reconstruction quality using both **quantitative metrics** and mesh comparisons.
 
 ---
 
@@ -91,7 +91,7 @@ python render.py -m output/000fab2b-8 -s data/apollo17 --skip_train --iteration 
 Used `scikit-image` for computing metrics:
 
 ```python
-Run Assignment4_partA.py to view the evaluation results
+Run [Assignment4_partA.py](Assignment4_partA.py) to view the evaluation results
 ```
 <img width="1552" alt="Screenshot 2025-05-04 at 3 07 36 PM" src="https://github.com/user-attachments/assets/ad263588-dceb-4f55-850e-90993012f359" />
 
@@ -100,20 +100,19 @@ Run Assignment4_partA.py to view the evaluation results
 ## ✨ Novel View Generation
 
 * Extracted 15 camera translations from `images.txt`
-* Performed PCA to find 3 principal directions
+* Performed PCA to find 3 principal directions using 
 * Generated 10 novel camera poses around mean position
 * Saved poses in:
 
-  * `images.txt` (for rendering)
   * `novel_poses.json` (for structured input to NeRF-like renderers)
 
-### Rendering Novel Views
+### Rendering Novel Views using **nerfstudio**
 
 ```bash
-python render.py -m output/000fab2b-8 -s data/apollo17 --skip_train --iteration 30000
+python nerfstudio/nerfstudio/scripts/gaussian_splatting/render.py camera-path     --model-path output/000fab2b-8     --camera-path-filename novel_poses.json     --output-path output/000fab2b-8/novel_renders/pca_poses/     --output-format images
 ```
 
-* Rendered novel views to `ours_30000/renders/`
+* Rendered novel views to `output/000fab2b-8/novel_renders/`
 
 ---
 
