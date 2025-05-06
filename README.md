@@ -43,6 +43,8 @@ This Assignment-4 reconstructs 3D scenes from Apollo 17 lunar imagery using COLM
 
 ### Step 4: Export COLMAP Output for Gaussian Splatting
 
+### Step 5 : Generated textured model and dense point cloud.
+
 Then copied:
 
 * `images/`, `cameras.txt`, `images.txt`, `points3D.txt` into `data/apollo17/`
@@ -85,13 +87,23 @@ python render.py -m output/000fab2b-8 -s data/apollo17 --skip_train --iteration 
 
 * Rendered 15 original views using `images.txt` poses.
 * recovered images are  in `output/000fab2b-8/train/ours_30000/renders/` and `gt/` is the original view
+* Both of them look almost similar.Only when you compare them by constantly switching can you observe some difference.
+
+
+### Original Image
+ ![00000](https://github.com/user-attachments/assets/3cafce5b-d5b4-48fa-a3e6-0cedf72f0672)
+
+### Recovered image
+ ![00000](https://github.com/user-attachments/assets/d3379bdc-178f-4944-8c17-f24e0fa0ffd3)
+
+
 
 ### PSNR / SSIM Evaluation
 
 Used `scikit-image` for computing metrics:
 
 ```python
-Run [Assignment4_partA.py](Assignment4_partA.py) to view the evaluation results
+Run Assignment4_partA.py (in main directory) to view the evaluation results
 ```
 <img width="1552" alt="Screenshot 2025-05-04 at 3 07 36 PM" src="https://github.com/user-attachments/assets/ad263588-dceb-4f55-850e-90993012f359" />
 
@@ -100,7 +112,7 @@ Run [Assignment4_partA.py](Assignment4_partA.py) to view the evaluation results
 ## ✨ Novel View Generation
 
 * Extracted 15 camera translations from `images.txt`
-* Performed PCA to find 3 principal directions using 
+* Performed PCA to find 3 principal directions using nerf_json.py
 * Generated 10 novel camera poses around mean position
 * Saved poses in:
 
@@ -166,7 +178,7 @@ This work was adapted from:
 
 ---
 
-## 🙌 Author
+## 🙌 Name 
 
 Teja Vishnu Vardhan Boddu
 M.S. Robotics & Autonomous Systems
