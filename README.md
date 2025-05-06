@@ -124,7 +124,11 @@ Run Assignment4_partA.py (in main directory) to view the evaluation results
 python nerfstudio/nerfstudio/scripts/gaussian_splatting/render.py camera-path     --model-path output/000fab2b-8     --camera-path-filename novel_poses.json     --output-path output/000fab2b-8/novel_renders/pca_poses/     --output-format images
 ```
 
+
 * Rendered novel views to `output/000fab2b-8/novel_renders/`
+
+  <img width="1552" alt="Screenshot 2025-05-04 at 7 07 00 PM" src="https://github.com/user-attachments/assets/f213b7ee-ce5c-46ec-8874-6419595d9bb1" />
+
 
 ---
 
