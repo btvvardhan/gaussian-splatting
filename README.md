@@ -129,7 +129,7 @@ python nerfstudio/nerfstudio/scripts/gaussian_splatting/render.py camera-path   
 
   <img width="1552" alt="Screenshot 2025-05-04 at 7 07 00 PM" src="https://github.com/user-attachments/assets/f213b7ee-ce5c-46ec-8874-6419595d9bb1" />
 
-
+but the new rendered images i got are all black.I thought there was an issue with my poses being too far from original images.so i put the original poses and to check and still got all black images. i guess i am doing something wrong.But i didnt have enough time with all the projects.If the due data is extended, i hope i can finish and update the assignment.
 ---
 
 ## 📷 NeRFStudio / Meshroom Photogrammetry Comparison
