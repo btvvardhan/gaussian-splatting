@@ -119,7 +119,7 @@ Run Assignment4_partA.py (in main directory) to view the evaluation results
 
   * `novel_poses.json` (for structured input to NeRF-like renderers)
 
-### Rendering Novel Views using **nerfstudio**
+### Rendering Novel Views using **nerfstudio**(I cloned nerfstudio for this)
 
 ```bash
 python nerfstudio/nerfstudio/scripts/gaussian_splatting/render.py camera-path     --model-path output/000fab2b-8     --camera-path-filename novel_poses.json     --output-path output/000fab2b-8/novel_renders/pca_poses/     --output-format images
