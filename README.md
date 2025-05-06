@@ -1,4 +1,4 @@
-# Apollo 17 View Synthesis with Gaussian Splatting and Photogrammetry
+# RAS598 Assignment4 Apollo 17 View Synthesis with Gaussian Splatting and Photogrammetry
 
 This Assignment-4 reconstructs 3D scenes from Apollo 17 lunar imagery using COLMAP and enhances them using **Gaussian Splatting** to synthesize novel views. We perform photogrammetry-based modeling with and without augmented views and assess reconstruction quality using both **quantitative metrics** and mesh comparisons.
 
