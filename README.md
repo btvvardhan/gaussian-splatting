@@ -29,7 +29,6 @@ This Assignment-4 reconstructs 3D scenes from Apollo 17 lunar imagery using COLM
 ```
 
 ---
-### https://drive.google.com/drive/folders/18HpY9rcmmJabDunClj1I-x1EAUI534R0?usp=sharing   THIS IS THE DRIVE LINK FOR THE ABOVE FILES
 
 ## 🔧 Step-by-Step Process
 
